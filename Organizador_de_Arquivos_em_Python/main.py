@@ -26,7 +26,6 @@ def organizar_pasta(diretorio):
     arquivos = [f for f in os.listdir(diretorio) if os.path.isfile(os.path.join(diretorio, f))]
 
     for arquivo in arquivos:
-        # Não mover o próprio script
         if arquivo == os.path.basename(__file__):
             continue
 
@@ -44,3 +43,5 @@ def organizar_pasta(diretorio):
 
 if __name__ == "__main__":
     organizar_pasta(os.getcwd())
+
+#SALVE PRO CHAT DO COPILOT
